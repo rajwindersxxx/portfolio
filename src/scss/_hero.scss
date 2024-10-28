@@ -1,0 +1,36 @@
+.hero_section {
+    border: 0.0725rem solid $Accent_color;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    background-color: $secondary_color;
+    color: $secondary_text;
+    position: relative;
+    height: 80vh;
+    // padding-left:  54px;
+    overflow: hidden;
+    .image_box{
+      position: absolute; 
+      right: 0;
+    }
+    // //for responsive
+
+  }
+  .hero_description {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+  }
+  
+  .hero_image {
+    height: 80vh;
+    z-index: -3;
+    overflow: hidden;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+  }

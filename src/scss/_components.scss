@@ -1,0 +1,17 @@
+.button_primary {
+    width: 9.375rem;
+    height: 2.8125rem;
+    font-size: 1.5rem;
+    background-color: $primary_color;
+    border: none;
+    color: $secondary_text;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: $hover_color;
+    }
+}
+  .container {
+    margin: 1.5rem 1.5rem 98px 1.5rem;
+  }

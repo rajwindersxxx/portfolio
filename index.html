@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.scss" />
+    <link rel="stylesheet" href="./src/scss/main.scss" />
     <script defer src="src/main.js" type="module"></script>
     <title>WebDev</title>
   </head>
@@ -25,21 +25,23 @@
         </div>
       </nav>
     </header>
-    <section class="hero_section" id="home">
+    <section class="hero_section container change_grid" id="home">
       <div class="hero_description">
         <h1>Rajwinder Singh</h1>
         <h2>A web Developer</h2>
-        <button class="learn More">Contact</button>
+        <button class="button_primary">Contact</button>
       </div>
-      <div class="hero_image">
-        <img
-          src="./src/images/note.webp"
-          alt="Image of a book"
-          class="bookImage"
-        />
+      <div class="image_box">
+        <div class="hero_image">
+          <img
+            src="./src/images/note.webp"
+            alt="Image of a book"
+            class="bookImage"
+          />
+        </div>
       </div>
     </section>
-    <section class="about_section" id="about">
+    <section class="about_section container" id="about">
       <div class="block">
         <div class="profile_image">
           <img
@@ -59,5 +61,9 @@
         </p>
       </div>
     </section>
+    <section class="Projects_section container"></section>
+    <section class="skills_section container"></section>
+    <section class="contact_section container"></section>
+    <footer class="footer"></footer>
   </body>
 </html>
