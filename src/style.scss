@@ -1,0 +1,117 @@
+$primary_color: #1e3a8a;
+$secondary_color: #6b7280;
+$Accent_color: #3b82f6;
+$background_color: #f9fafb;
+$main_text: #ffffff;
+$secondary_text: #e5e7eb;
+$hover_color: #182e6e;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: $background-color;
+  color: #555;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+button {
+  width: 9.375rem;
+  height: 2.8125rem;
+  font-size: 1.5rem;
+  background-color: $primary_color;
+  border: none;
+  color: $secondary_text;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover{
+    background-color: $hover_color;
+}
+section {
+  margin: 1.5rem 1.5rem 98px 1.5rem;
+}
+// *NAVIGATION BAR SETTINGS
+.nav_bar {
+  background-color: $primary_color;
+  height: 3.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  .logo {
+    color: $main_text;
+    font-family: serif;
+    font-size: 1.875rem;
+  }
+}
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  a {
+    text-decoration: none;
+    color: $secondary_text;
+  }
+}
+
+//* DEFAULT   CLA
+//* HOME SECTION
+.hero_section {
+  border: 0.0725rem solid $Accent_color;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: $secondary_color;
+  color: $secondary_text;
+}
+.hero_description {
+  align-self: center;
+  justify-self: center;
+  padding-left: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+.hero_image {
+  overflow: hidden;
+  height: 80vh;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+}
+//*ABOUT SECTION
+
+.about_section .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 70%;
+  margin: auto;
+  p {
+    text-align: center;
+  }
+}
+.profile_image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid $primary_color;
+  overflow: hidden;
+  img {
+    transform: translateX(-10px);
+  }
+}
+/* - Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
