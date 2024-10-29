@@ -1,14 +1,15 @@
 .about_section{
-  height: 90vh;
   display: flex;
   flex-direction: column;
+  gap: 36px;
   flex-shrink: 0 0 0;
+
 }
 .about_section .block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
   width: 70%;
   margin: auto;
   p {
@@ -16,13 +17,13 @@
   }
 }
 .profile_image {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
-  border: 5px solid $primary_color;
+  border: .3125rem solid $primary_color;
   overflow: hidden;
-  img {
-    transform: translateX(-10px);
+  img{
+    transform: scale(1.1);
   }
 }
 .icons_block {
@@ -34,16 +35,14 @@
   grid-template-columns: repeat(9, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
+  padding-top: 24px;
+  
   div {
-    width: 60px;
-    height: 40px;
+    width: 3.75rem;
+    height: 2.5rem;
     align-self: center;
     justify-self: center;
-  }
-  div::after {
-    content: '';
-    background-color: red;
   }
   h2 {
     grid-column: 1/-1;

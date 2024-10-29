@@ -16,10 +16,10 @@ $color-grey-dark-1: #615551; // Normal text
 $color-grey-dark-2: #918581; // Lighter text
 
 
-$bp-large: 78.15em; // 1250px
-$bp-medium: 61.25em; // 980px
-$bp-small: 37.5em; // 600px
-$bp-smallest: 31.25em; // 500px
+$bp-large: 78.15em; // 78.125rem
+$bp-medium: 61.25em; // 61.25rem7
+$bp-small: 37.5em; // 37.5rem
+$bp-smallest: 31.25em; // 31.25rem
 *,
 *::before,
 *::after {
@@ -39,4 +39,15 @@ body {
 }
 p{
   line-height: 1.5;
+}
+h1{
+  font-size: 48px;
+}
+h2{
+  color: $primary_color;
+  font-size: 32px;
+}
+h3{
+  font-size: 24px;
+  color: $color-grey-dark-1;
 }

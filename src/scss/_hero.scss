@@ -6,8 +6,8 @@
     background-color: $secondary_color;
     color: $secondary_text;
     position: relative;
-    height: 80vh;
-    // padding-left:  54px;
+    min-height: 80vh;
+    // padding-left:  3.375rem;
     overflow: hidden;
     .image_box{
       position: absolute; 
@@ -25,7 +25,6 @@
     flex-direction: column;
     gap: 1.5rem;
     h1 {
-      font-size: 3.5rem;
       line-height: 1;
     }
   }

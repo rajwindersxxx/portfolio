@@ -1,3 +1,43 @@
+.skills_section {
+  .grid {
+    gap: 5.3125rem;
+    grid-auto-rows: 1fr;
+    padding: 1.5rem;
+  }
+  h2 {
+    text-align: center;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .section_description{
+    width: 70%;
+    margin: 2.75rem auto;
+    justify-content: center;
+    text-align: center;
 
+  }
 
-// For odd-numbered images, start in the first column
+.skill_image {
+  width: 31.25rem;
+  height: 18.75rem;
+  object-fit: cover;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+}
+.skill_image:nth-child(even){
+    justify-self: end;
+}
+.skill_image:last-child img{
+    transform: scale(1.07);
+}
+.skill_description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.skills_tags{
+  
+}

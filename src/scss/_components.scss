@@ -13,7 +13,7 @@
   }
 }
 .container {
-  margin: 1.5rem 1.5rem 98px 1.5rem;
+  margin: 1.5rem 1.5rem 6.125rem 1.5rem;
 }
 .grid {
   display: grid;
@@ -28,4 +28,21 @@
 }
 .grid_col-1{
   grid-template-columns: 1fr;
+}
+.line{
+  border: 1px solid $color-grey-light-3;
+}
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: .2em .5em .3em;
+  border-radius: 2px;
+  background: $secondary_color;
+  color: white;
+  font-weight: 600;
+  margin: .25em .1em;
+  cursor: default;
+  &:hover{
+    background-color: $primary_color;
+  }
 }
