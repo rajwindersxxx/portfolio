@@ -1,17 +1,31 @@
 .button_primary {
-    width: 9.375rem;
-    height: 2.8125rem;
-    font-size: 1.5rem;
-    background-color: $primary_color;
-    border: none;
-    color: $secondary_text;
-    cursor: pointer;
-    transition: all 0.3s;
+  width: 9.375rem;
+  height: 2.8125rem;
+  font-size: 1.5rem;
+  background-color: $primary_color;
+  border: none;
+  color: $secondary_text;
+  cursor: pointer;
+  transition: all 0.3s;
 
-    &:hover{
-        background-color: $hover_color;
-    }
-}
-  .container {
-    margin: 1.5rem 1.5rem 98px 1.5rem;
+  &:hover {
+    background-color: $hover_color;
   }
+}
+.container {
+  margin: 1.5rem 1.5rem 98px 1.5rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+.grid_col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid_col-2{
+  grid-template-columns: 1fr 1fr;
+}
+.grid_col-1{
+  grid-template-columns: 1fr;
+}

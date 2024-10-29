@@ -1,5 +1,5 @@
 .hero_section {
-    border: 0.0725rem solid $Accent_color;
+    border: 0.0725rem solid $accent_color;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     align-items: center;
@@ -12,6 +12,8 @@
     .image_box{
       position: absolute; 
       right: 0;
+      top: 0;
+      max-width: 70vw;
     }
     // //for responsive
 
@@ -30,7 +32,9 @@
   
   .hero_image {
     height: 80vh;
-    z-index: -3;
     overflow: hidden;
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%); 
+    object-fit: cover; 
   }
+  

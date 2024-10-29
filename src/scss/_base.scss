@@ -1,10 +1,25 @@
 $primary_color: #1e3a8a;
 $secondary_color: #6b7280;
-$Accent_color: #3b82f6;
+$accent_color: #3b82f6;
 $background_color: #f9fafb;
+$background-color2: whiteSmoke;
 $main_text: #ffffff;
 $secondary_text: #e5e7eb;
 $hover_color: #182e6e;
+
+// lines copy from forky project
+
+$color-grey-light-1: #f9f5f3; // Light background
+$color-grey-light-2: #f2efee; // Light lines
+$color-grey-light-3: #d3c7c3; // Light text (placeholder)
+$color-grey-dark-1: #615551; // Normal text
+$color-grey-dark-2: #918581; // Lighter text
+
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
 *,
 *::before,
 *::after {
@@ -17,8 +32,11 @@ html {
 }
 body {
   background-color: $background-color;
-  color: #555;
+  color:$color-grey-dark-1;
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
+}
+p{
+  line-height: 1.5;
 }
