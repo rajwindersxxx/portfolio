@@ -12,6 +12,19 @@
     background-color: $hover_color;
   }
 }
+.button_secondary {
+  width: 9.375rem;
+  height: 2.8125rem;
+  font-size: 1.5rem;
+  background-color: $secondary_color;
+  border: none;
+  color: $secondary_text;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $hover_color;
+  }
+}
 .container {
   margin: 1.5rem 1.5rem 6.125rem 1.5rem;
 }
