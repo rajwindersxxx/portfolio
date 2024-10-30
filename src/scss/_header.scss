@@ -1,21 +1,20 @@
 // *NAVIGATION BAR SETTINGS
 .nav_bar {
-    background-color: $primary_color;
-    height: 3.75rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-    .logo {
-      color: $main_text;
-      font-family: serif;
-      font-size: 1.875rem;
-    }
-  }
-  .nav_list {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
- 
-  }
+  background-color: $primary_color;
+  height: 3.75rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.logo {
+  color: $main_text;
+  font-family: serif;
+  font-size: 1.875rem;
+}
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}

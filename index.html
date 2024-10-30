@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/scss/main.scss" />
-    <script defer src="src/main.js" type="module"></script>
+    <script defer src="src/js/main.js" type="module"></script>
     <title>WebDev</title>
   </head>
   <body>
@@ -139,7 +139,7 @@
     <div class="line container"></div>
     <section id="skills" class="skills_section container">
       <h2>Skills and Experiences</h2>
-      <div class="grid grid_col-2">
+      <div class="grid grid_col-2 skills_container">
         <div class="skill_description">
           <h3>Frontend skills</h3>
           <p>
@@ -377,48 +377,66 @@
           or would like to discuss a project, feel free to get in touch. You can
         </p>
         <div class="contact_links">
-          <button class="button_primary">Contact</button>
-          <button class="button_secondary">Resume</button>
+          <button
+            class="button_primary"
+            onclick="window.location.href='mailto:rajwindersxxx@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20YourName,'"
+          >
+            Contact
+          </button>
+          <button
+            class="button_secondary"
+            onclick="window.open('https://drive.google.com/file/d/1jZclG3Hh1NnWbbQXbtN0CBQO-yw8eV3E/view', '_blank')"
+          >
+            Resume
+          </button>
         </div>
       </div>
     </section>
 
     <section class="feedback_section container">
-      <div class="grid grid_col-3">
+      <div>
         <div class="feed_back-title">
-          <h3 class="feedback_title">Have any suggestions or feedback?</h3>
+          <h2 class="feedback_title">Have any suggestions or feedback?</h2>
         </div>
         <form class="feedback_form grid">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-          />
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-          />
-          <label for="message">Message:</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter your message"
-          ></textarea>
+          <div><label for="name">Name:</label></div>
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div><label for="email">Email:</label></div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div><label for="message">Message:</label></div>
+          <div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
           <button type="submit" class="button_primary">Submit</button>
         </form>
       </div>
     </section>
     <footer class="footer">
       <div class="footer_block">
-        <p class="footer_copyright">&copy; 2023 Rajwinder Singh. All rights reserved.</p>
+        <p class="footer_copyright">
+          &copy; 2023 Rajwinder Singh. All rights reserved.
+        </p>
         <div class="footer_links">
           <a
-            href="https://www.linkedin.com/in/rajwinder-singh-5a9a61222/"
+            href="https://www.linkedin.com/in/rajwinder-singh-93651b218/"
             target="_blank"
             rel="noopener"
             >[LinkedIn]</a
