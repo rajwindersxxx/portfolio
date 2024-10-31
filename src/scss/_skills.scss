@@ -6,6 +6,7 @@
   }
   h2 {
     text-align: center;
+    padding: 16px;
   }
 }
 img {
@@ -36,4 +37,17 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.best_skills{
+  display: flex;
+  gap: 20px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+.skill_set{
+  text-align: center;
+  margin: 24px;
 }

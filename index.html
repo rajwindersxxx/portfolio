@@ -44,7 +44,9 @@
       </div>
       <div class="hero_image">
         <img
-          src="./src/images/note.webp"
+          class="lazy"
+          src="./src/images/lazy/note.webp"
+          data-src="./src/images/note.webp"
           alt="Image of a book"
           class="bookImage"
         />
@@ -54,7 +56,9 @@
       <div class="block">
         <div class="profile_image">
           <img
-            src="./src/images/Profile-img.jpg"
+            class="lazy"
+            data-src="./src/images/Profile-img.jpg"
+            src="./src/images/lazy/Profile-img.jpg"
             alt="Profile pic"
             width="100%"
           />
@@ -145,7 +149,7 @@
         </div>
       </div>
     </section>
-    <div class="line container"></div>
+    <div class="line"></div>
     <section id="skills" class="skills_section container">
       <h2>Skills and Experiences</h2>
       <div class="grid grid_col-2 skills_container">
@@ -173,10 +177,20 @@
           </div>
         </div>
         <div class="skill_image">
-          <img src="./src/images/computer.gif" alt="image" />
+          <img
+            data-src="./src/images/computer.gif"
+            src="./src/images/lazy/computer-0000.jpg"
+            alt="image"
+            class="lazy"
+          />
         </div>
         <div class="skill_image">
-          <img src="./src/images/backend.gif" alt="image" />
+          <img
+            data-src="./src/images/backend.gif"
+            src="./src/images/lazy/backend-0000.jpg"
+            alt="image"
+            class="lazy"
+          />
         </div>
         <div class="skill_description">
           <h3>Backend skills</h3>
@@ -223,156 +237,231 @@
           </div>
         </div>
         <div class="skill_image">
-          <img src="./src/images/skills.gif" alt="image" />
+          <img
+            data-src="./src/images/skills.gif"
+            src="./src/images/lazy/skills-0000.jpg"
+            alt="image"
+            class="lazy"
+          />
         </div>
       </div>
       <p class="section_description">
         With a solid foundation in web applications, I have hands-on experience
-        building projects using HTML, CSS, JavaScript, and backend skills in PHP
-        and MySQL. I find backend development especially fascinating, from
-        creating logical flows to designing efficient SQL databases.
+        building projects using HTML, CSS, JavaScript, and backend skills in
+        Nodejs and PostgreSQL. I find backend development especially
+        fascinating, from creating logical flows to designing efficient SQL
+        databases.
       </p>
+      <div class="skill_set">
+        <h3>Good In</h3>
+      </div>
+      <div class="best_skills">
+        <img
+          src="./src/icons/html5-plain-wordmark.svg"
+          alt="html"
+          width="40px"
+          height="40px"
+        />
+        <img
+          src="./src/icons/css3-plain-wordmark.svg"
+          alt="css"
+          width="40px"
+          height="40px"
+        />
+        <img
+          src="./src/icons/javascript-original.svg"
+          alt="js"
+          width="40px"
+          height="40px"
+        />
+        <img
+          src="./src/icons/nodejs-original-wordmark.svg"
+          alt="node"
+          width="40px"
+          height="40px"
+        />
+        <img
+          src="./src/icons/postgresql-plain-wordmark.svg"
+          alt="postgres"
+          width="40px"
+          height="40px"
+        />
+      </div>
     </section>
     <section id="projects" class="Projects_section container">
-      <div>
-        <h2>Explore some of my projects</h2>
-      </div>
-      <div class="grid grid_col-3">
-        <div class="project">
-          <div class="image">
-            <img src="./src/images/ermsProject.png" alt="erms project" />
-          </div>
-          <h3>Employee management system</h3>
-          <p>
-            Fully developed by me, this PHP-based application manages employee
-            records. It incorporates HTML, CSS, JavaScript, and Bootstrap for a
-            responsive design.
-          </p>
-          <div class="Project_links">
-            <a href="https://php.tiven.xyz/" target="_blank" rel="noopener"
-              >[View Project]</a
-            >
-            |
-            <a
-              href="https://github.com/rajwindersxxx/employeemanagement.git"
-              target="_blank"
-              rel="noopener"
-              >[Git Hub]</a
-            >
-          </div>
+      <div class="project_block">
+        <div>
+          <h2>Explore some of my projects</h2>
         </div>
-        <div class="project">
-          <div class="image">
-            <img src="./src/images/notenestProject.png" alt="erms project" />
+        <div class="grid grid_col-3">
+          <div class="project">
+            <div class="image">
+              <img
+                data-src="./src/images/ermsProject.png"
+                src="./src/images/lazy/ermsProjec.jpeg"
+                alt="erms project"
+              />
+            </div>
+            <h3>Employee management system</h3>
+            <p>
+              Fully developed by me, this PHP-based application manages employee
+              records. It incorporates HTML, CSS, JavaScript, and Bootstrap for
+              a responsive design.
+            </p>
+            <div class="Project_links">
+              <a href="https://php.tiven.xyz/" target="_blank" rel="noopener"
+                >[View Project]</a
+              >
+              |
+              <a
+                href="https://github.com/rajwindersxxx/employeemanagement.git"
+                target="_blank"
+                rel="noopener"
+                >[Git Hub]</a
+              >
+            </div>
           </div>
-          <h3>NoteNest (make nots)</h3>
-          <p>
-            Created entirely by me, this book review app allows users to share
-            their thoughts and summaries using EJS templates and Passport for
-            secure OAuth authentication.
-          </p>
-          <div class="Project_links">
-            <a href="https://notenest.tiven.xyz/" target="_blank" rel="noopener"
-              >[View Project]</a
-            >
-            |
-            <a
-              href="https://github.com/rajwindersxxx/notebook-Site.git"
-              target="_blank"
-              rel="noopener"
-              >[Git Hub]</a
-            >
+          <div class="project">
+            <div class="image">
+              <img
+                class="lazy"
+                src="./src/images/lazy/notenestProjec.jpeg"
+                data-src="./src/images/notenestProject.png"
+                alt="erms project"
+              />
+            </div>
+            <h3>NoteNest (make nots)</h3>
+            <p>
+              Created entirely by me, this book review app allows users to share
+              their thoughts and summaries using EJS templates and Passport for
+              secure OAuth authentication.
+            </p>
+            <div class="Project_links">
+              <a
+                href="https://notenest.tiven.xyz/"
+                target="_blank"
+                rel="noopener"
+                >[View Project]</a
+              >
+              |
+              <a
+                href="https://github.com/rajwindersxxx/notebook-Site.git"
+                target="_blank"
+                rel="noopener"
+                >[Git Hub]</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="project">
-          <div class="image">
-            <img src="./src/images/maptyProject.png" alt="erms project" />
+          <div class="project">
+            <div class="image">
+              <img
+                class="lazy"
+                data-src="./src/images/maptyProject.png"
+                src="./src/images/lazy/maptyProjec.jpeg"
+                alt="erms project"
+              />
+            </div>
+            <h3>Mapty Workout Tracker</h3>
+            <p>
+              This workout tracker, developed as part of a course challenge,
+              uses HTML, SCSS, and JavaScript. I added features like local
+              storage, weather integration, error handling, api calls and
+              editing options to enhance functionality.
+            </p>
+            <div class="Project_links">
+              <a href="https://mapty.tiven.xyz/" target="_blank" rel="noopener"
+                >[View Project]</a
+              >
+              |
+              <a
+                href="https://github.com/rajwindersxxx/maptyChallange.git"
+                target="_blank"
+                rel="noopener"
+                >[Git Hub]</a
+              >
+            </div>
           </div>
-          <h3>Mapty Workout Tracker</h3>
-          <p>
-            This workout tracker, developed as part of a course challenge, uses
-            HTML, SCSS, and JavaScript. I added features like local storage,
-            weather integration, error handling, api calls and editing options
-            to enhance functionality.
-          </p>
-          <div class="Project_links">
-            <a href="https://mapty.tiven.xyz/" target="_blank" rel="noopener"
-              >[View Project]</a
-            >
-            |
-            <a
-              href="https://github.com/rajwindersxxx/maptyChallange.git"
-              target="_blank"
-              rel="noopener"
-              >[Git Hub]</a
-            >
+          <div class="project">
+            <div class="image">
+              <img
+                class="lazy"
+                data-src="./src/images/omifoodProject.png"
+                src="./src/images/lazy/omifoodProjec.jpeg"
+                alt="erms project"
+              />
+            </div>
+            <h3>Omifood Product Landing Page</h3>
+            <p>
+              A clean, stylish landing page created with HTML, CSS, and a bit of
+              JavaScript, showcasing product promotion.
+            </p>
+            <div class="Project_links">
+              <a
+                href="https://ommifoodapp.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                >[View Project]</a
+              >
+              |
+              <a
+                href="https://github.com/rajwindersxxx/omifood-forntEnd.git"
+                target="_blank"
+                rel="noopener"
+                >[Git Hub]</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="project">
-          <div class="image">
-            <img src="./src/images/omifoodProject.png" alt="erms project" />
+          <div class="project">
+            <div class="image">
+              <img
+                class="lazy"
+                data-src="./src/images/gameProject.png"
+                src="./src/images/lazy/gameProjec.jpeg"
+                alt="erms project"
+              />
+            </div>
+            <h3>Memory Challenge Game</h3>
+            <p>
+              A course challenge where players replicate growing patterns. Built
+              using HTML, CSS, and JavaScript, with materials provided by the
+              instructor.
+            </p>
+            <div class="Project_links">
+              <a
+                href="https://ommifoodapp.netlify.app/"
+                target="_blank"
+                rel="noopener"
+                >[View Project]</a
+              >
+              |
+              <a
+                href="https://github.com/rajwindersxxx/Simon-Game-Challenge.git"
+                target="_blank"
+                rel="noopener"
+                >[Git Hub]</a
+              >
+            </div>
           </div>
-          <h3>Omifood Product Landing Page</h3>
-          <p>
-            A clean, stylish landing page created with HTML, CSS, and a bit of
-            JavaScript, showcasing product promotion.
-          </p>
-          <div class="Project_links">
-            <a
-              href="https://ommifoodapp.netlify.app/"
-              target="_blank"
-              rel="noopener"
-              >[View Project]</a
-            >
-            |
-            <a
-              href="https://github.com/rajwindersxxx/omifood-forntEnd.git"
-              target="_blank"
-              rel="noopener"
-              >[Git Hub]</a
-            >
-          </div>
-        </div>
-        <div class="project">
-          <div class="image">
-            <img src="./src/images/gameProject.png" alt="erms project" />
-          </div>
-          <h3>Memory Challenge Game</h3>
-          <p>
-            A course challenge where players replicate growing patterns. Built
-            using HTML, CSS, and JavaScript, with materials provided by the
-            instructor.
-          </p>
-          <div class="Project_links">
-            <a
-              href="https://ommifoodapp.netlify.app/"
-              target="_blank"
-              rel="noopener"
-              >[View Project]</a
-            >
-            |
-            <a
-              href="https://github.com/rajwindersxxx/Simon-Game-Challenge.git"
-              target="_blank"
-              rel="noopener"
-              >[Git Hub]</a
-            >
-          </div>
-        </div>
-        <div class="project">
-          <div class="image">
-            <img src="./src/images/KeeperProject.png" alt="erms project" />
-          </div>
-          <h3>Keeper App</h3>
-          <p>
-            Developed using React, this note-taking app allows users to create
-            and save notes. I implemented local storage to ensure notes are
-            easily accessible.
-          </p>
-          <div class="Project_links">
-            <a href="/" target="_blank" rel="noopener">[View Project]</a>
-            |
-            <a href="/" target="_blank" rel="noopener">[Git Hub]</a>
+          <div class="project">
+            <div class="image">
+              <img
+                class="lazy"
+                data-src="./src/images/KeeperProject.png"
+                src="./src/images/KeeperProject.png"
+                alt="erms project"
+              />
+            </div>
+            <h3>Keeper App</h3>
+            <p>
+              Developed using React, this note-taking app allows users to create
+              and save notes. I implemented local storage to ensure notes are
+              easily accessible.
+            </p>
+            <div class="Project_links">
+              <a href="/" target="_blank" rel="noopener">[View Project]</a>
+              |
+              <a href="/" target="_blank" rel="noopener">[Git Hub]</a>
+            </div>
           </div>
         </div>
       </div>
@@ -441,7 +530,8 @@
     <footer class="footer">
       <div class="footer_block">
         <p class="footer_copyright">
-          &copy; 2023 Rajwinder Singh. All rights reserved.
+          &copy; <span class="year">2023</span> Rajwinder Singh. All rights
+          reserved.
         </p>
         <div class="footer_links">
           <a

@@ -26,9 +26,11 @@ $bp-smallest: 31.25em; // 31.25rem
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  box-sizing: border-box;
+
 }
 html {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background-color: $background-color;
@@ -36,6 +38,7 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
+
 }
 p{
   line-height: 1.5;
@@ -55,6 +58,7 @@ a{
   text-decoration: none;
   color: $secondary_text;
   transition: all 0.3s;
+  padding: 12px;
   &:hover{
     color: $accent_color;
   }

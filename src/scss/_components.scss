@@ -26,7 +26,8 @@
   }
 }
 .container {
-  margin: 1.5rem 1.5rem 6.125rem 1.5rem;
+  margin: 2.5rem 1.5rem 6.125rem 1.5rem;
+  padding: 24px 0;
 }
 .grid {
   display: grid;
@@ -44,6 +45,7 @@
 }
 .line{
   border: 1px solid $color-grey-light-3;
+  margin-bottom: 100px;
 }
 .tag {
   display: inline-block;
@@ -61,4 +63,14 @@
 }
 .hidden{
   display: none !important;
+}
+.lazy-load {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+  transform: translateY(0);
 }

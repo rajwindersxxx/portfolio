@@ -1,5 +1,5 @@
 .hero_section {
-  border: 0.0725rem solid $accent_color;
+  // border: 0.0725rem solid $accent_color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,10 +16,13 @@
   flex-direction: column;
   margin-right: -18.75rem;
   padding-left: 3.375rem;
-  gap: 2.25rem;
+  gap: 12px;
   z-index: 2;
   h1 {
     line-height: 1;
+  }
+  button{
+    margin-top: 16px;
   }
 }
 .hero_image {
