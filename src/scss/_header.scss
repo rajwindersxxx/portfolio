@@ -20,7 +20,8 @@
   gap: 1.5rem;
 }
 .menu_button{
-  background-color: transparent;
+  background-color: $primary_color;
+  z-index: 5;
   border: none;
   display: none;
 }
@@ -30,8 +31,9 @@
   align-items: center;
   padding: 36px;
   justify-content: center;
-  height: calc(100vh - 60px);
-  position: absolute;
+  height: 100vh;
+  position: fixed;
+  top: 0;
   z-index: 3;
   width: 100%;
   font-size: 40px;
@@ -48,5 +50,6 @@
       color: $accent_color;
     }
   }
+  
 }
 
