@@ -16,5 +16,37 @@
 .nav_list {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
+.menu_button{
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.overlay_model{
+  background-color: $secondary_text;
+  display: flex;
+  align-items: center;
+  padding: 36px;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  font-size: 40px;
+  ul{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    list-style: none;
+    text-align: center;
+  }
+  a{
+    color: $primary_color;
+    &:hover{
+      color: $accent_color;
+    }
+  }
+}
+

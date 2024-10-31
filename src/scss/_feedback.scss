@@ -1,12 +1,13 @@
-.feed_back-title {
+.feedback_title {
   grid-column: span 3;
   text-align: center;
   margin: 24px;
+  color: $primary_color;
 }
 .feedback_section {
   border: 1px solid $color-grey-dark-2;
   padding: 24px;
-  background-color: $background-color2;
+  // background-color: $background-color2;
 }
 .feedback_form {
   grid-column: span 3;
@@ -14,6 +15,7 @@
   width: 70%;
   margin: auto;
   grid-template-columns: auto 1fr;
+  
   input {
     width: 100%;
     height: 2.5rem;

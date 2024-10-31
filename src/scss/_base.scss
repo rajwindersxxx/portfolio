@@ -1,4 +1,4 @@
-$primary_color: #1e3a8a;
+$primary_color: #354e96;
 $secondary_color: #6b7280;
 $accent_color: #3b82f6;
 $background_color: #f9fafb;
@@ -41,14 +41,14 @@ p{
   line-height: 1.5;
 }
 h1{
-  font-size: 48px;
+  font-size: 3rem;
 }
 h2{
   color: $primary_color;
-  font-size: 32px;
+  font-size: 2rem;
 }
 h3{
-  font-size: 24px;
+  font-size: 1.5rem;
   color: $color-grey-dark-1;
 }
 a{
@@ -59,19 +59,19 @@ a{
     color: $accent_color;
   }
 }
-@media screen and (max-width: 1132px) {
+@media screen and (max-width: 70.75rem) {
   html{
     font-size: 80%;
   }
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 27.1875rem) {
     h1{
-      font-size: 24px;
+      font-size: 1.5rem;
     }
     h2{
-      font-size: 18px;  
+      font-size: 1.125rem;  
     }
     h3{
-      font-size: 16px;
+      font-size: 1rem;
     }
 }

@@ -19,11 +19,22 @@
             <li class="nav_link"><a href="#about">About</a></li>
             <li class="nav_link"><a href="#projects">Projects</a></li>
             <li class="nav_link"><a href="#skills">Skills</a></li>
-            <li class="nav_link"><a href="#resume">Resume</a></li>
             <li class="nav_link"><a href="#contact">Contact</a></li>
           </ul>
         </div>
+        <button class="menu_button">
+          <img src="./src/icons/menu.svg" alt="menu icon" width="100px" />
+        </button>
       </nav>
+      <div class="overlay_model">
+        <ul class="nav_list-model">
+          <li class="nav_link"><a href="#">Home</a></li>
+          <li class="nav_link"><a href="#about">About</a></li>
+          <li class="nav_link"><a href="#projects">Projects</a></li>
+          <li class="nav_link"><a href="#skills">Skills</a></li>
+          <li class="nav_link"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <section id="home" class="hero_section container change_grid" id="home">
       <div class="hero_description">
@@ -31,14 +42,12 @@
         <h3>A web Developer</h3>
         <button class="button_primary">Learn more</button>
       </div>
-      <div class="image_box">
-        <div class="hero_image">
-          <img
-            src="./src/images/note.webp"
-            alt="Image of a book"
-            class="bookImage"
-          />
-        </div>
+      <div class="hero_image">
+        <img
+          src="./src/images/note.webp"
+          alt="Image of a book"
+          class="bookImage"
+        />
       </div>
     </section>
     <section id="about" class="about_section container" id="about">
@@ -226,7 +235,7 @@
     </section>
     <section id="projects" class="Projects_section container">
       <div>
-        <h2>Explore some of my projects that showcase my skills</h2>
+        <h2>Explore some of my projects</h2>
       </div>
       <div class="grid grid_col-3">
         <div class="project">
@@ -369,12 +378,12 @@
       </div>
     </section>
 
-    <section class="contact_section container">
+    <section id="contact" class="contact_section container">
       <div class="contact_block">
         <h2 class="contact_title">Get in touch</h2>
         <p class="contact_description">
           I'm currently looking for new opportunities. If you have any questions
-          or would like to discuss a project, feel free to get in touch. You can
+          or would like to discuss a project, feel free to get in touch.
         </p>
         <div class="contact_links">
           <button
