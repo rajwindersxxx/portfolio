@@ -22,7 +22,7 @@ navLinks.forEach(Element => {
     document.body.classList.toggle('disable_scroll');
   });
 });
-
+// lazy loading
 document.addEventListener('DOMContentLoaded', function () {
   const lazyImages = document.querySelectorAll('.lazy');
 
@@ -45,3 +45,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   lazyImages.forEach(img => observer.observe(img));
 });
+
+// Sticky navigation
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+};
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-60px`,
+});
+headerObserver.observe(sectionHeroEl);
