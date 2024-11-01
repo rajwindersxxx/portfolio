@@ -16,13 +16,13 @@
   flex-direction: column;
   margin-right: -18.75rem;
   padding-left: 3.375rem;
-  gap: 12px;
+  gap: .75rem;
   z-index: 2;
   h1 {
     line-height: 1;
   }
   button{
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 }
 .hero_image {
@@ -30,6 +30,8 @@
   clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
   width: 70vw;
   filter: brightness(0.5);
-
   // object-fit: cover;
+}
+.overlay_model{
+  display: none;
 }

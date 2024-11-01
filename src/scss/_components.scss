@@ -27,7 +27,7 @@
 }
 .container {
   margin: 2.5rem 1.5rem 6.125rem 1.5rem;
-  padding: 24px 0;
+  padding: 1.5rem 0;
 }
 .grid {
   display: grid;
@@ -44,14 +44,14 @@
   grid-template-columns: 1fr;
 }
 .line{
-  border: 1px solid $color-grey-light-3;
-  margin-bottom: 100px;
+  border: .0625rem solid $color-grey-light-3;
+  margin-bottom: 6.25rem;
 }
 .tag {
   display: inline-block;
-  border-radius: 3px;
+  border-radius: .1875rem;
   padding: .2em .5em .3em;
-  border-radius: 2px;
+  border-radius: .125rem;
   background: $secondary_color;
   color: white;
   font-weight: 600;
@@ -62,15 +62,19 @@
   }
 }
 .hidden{
-  display: none !important;
+  opacity: 0 !important;
+  transform: translateY(-100%);
 }
-.lazy-load {
+.lazy {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.lazy-load.loaded {
+.lazy.loaded {
   opacity: 1;
   transform: translateY(0);
+}
+.disable_scroll{
+  overflow: hidden;
 }

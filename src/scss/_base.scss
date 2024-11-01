@@ -58,24 +58,8 @@ a{
   text-decoration: none;
   color: $secondary_text;
   transition: all 0.3s;
-  padding: 12px;
+  padding: .75rem;
   &:hover{
     color: $accent_color;
   }
-}
-@media screen and (max-width: 70.75rem) {
-  html{
-    font-size: 80%;
-  }
-}
-@media screen and (max-width: 27.1875rem) {
-    h1{
-      font-size: 1.5rem;
-    }
-    h2{
-      font-size: 1.125rem;  
-    }
-    h3{
-      font-size: 1rem;
-    }
 }

@@ -6,12 +6,13 @@
   }
   h2 {
     text-align: center;
-    padding: 16px;
+    padding: 1rem;
   }
-}
-img {
+  img {
   width: 100%;
 }
+}
+
 .section_description {
   width: 70%;
   margin: 2.75rem auto;
@@ -40,8 +41,8 @@ img {
 }
 .best_skills{
   display: flex;
-  gap: 20px;
-  width: 300px;
+  gap: 1.25rem;
+  width: 18.75rem;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -49,5 +50,5 @@ img {
 }
 .skill_set{
   text-align: center;
-  margin: 24px;
+  margin: 1.5rem;
 }

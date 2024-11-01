@@ -2,7 +2,6 @@
 const menuButton = document.querySelector('.menu_button');
 const overlayModel = document.querySelector('.overlay_model');
 const sectionHeroEl = document.querySelector('.hero_section');
-
 const navLinks = document.querySelectorAll('.nav_link-model');
 const year = document.querySelector('.year');
 const header = document.querySelector('.header');
@@ -13,10 +12,14 @@ year.innerHTML = currentYear;
 // EVENT LISTENERS
 menuButton.addEventListener('click', () => {
   overlayModel.classList.toggle('hidden');
+  menuButton.classList.toggle('menu_overlay');
+  document.body.classList.toggle('disable_scroll');
 });
 navLinks.forEach(Element => {
   Element.addEventListener('click', () => {
     overlayModel.classList.toggle('hidden');
+    menuButton.classList.toggle('menu_overlay');
+    document.body.classList.toggle('disable_scroll');
   });
 });
 
@@ -27,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        img.src = img.getAttribute('data-src');
+        img.src = img.dataset.src;
         img.classList.add('loaded'); // Add loaded class for the animation
         observer.unobserve(img); // Stop observing the image once it's loaded
       }

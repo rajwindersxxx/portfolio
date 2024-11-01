@@ -21,9 +21,6 @@
   border-radius: 50%;
   border: .3125rem solid $primary_color;
   overflow: hidden;
-  img{
-    transform: scale(1.1);
-  }
 }
 .icons_block {
   grid-column: 1/-1;

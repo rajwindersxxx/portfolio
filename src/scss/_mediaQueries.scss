@@ -1,6 +1,11 @@
-@media screen and (max-width: 1024px) {
+
+
+@media screen and (max-width: 64rem) {
   .hero_image {
     transform: scale(1.2);
+  }
+  html {
+    font-size: 80%;
   }
 }
 @media screen and (max-width: 59.75rem) {
@@ -30,7 +35,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .hero_section {
-    max-height: 400px;
+    max-height: 25rem;
   }
   .hero_description {
     position: absolute;
@@ -67,16 +72,48 @@
     transform: scale(1.5);
   }
 }
+// small screen media
 @media screen and (max-width: 31rem) {
   .nav_list {
     display: none;
   }
-  .menu_button{
+  .menu_button {
     display: block;
   }
-  
+
   .feedback_form {
     width: 90%;
+  }
+  .overlay_model {
+    background-color: $secondary_text;
+    display: flex;
+    align-items: center;
+    padding: 2.25rem;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    font-size: 1.625rem;
+    opacity: 1;
+    transition: all 0.3s;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 3.75rem;
+      list-style: none;
+      text-align: center;
+    }
+    a {
+      color: $primary_color;
+      &:hover {
+        color: $accent_color;
+      }
+    }
+  }
+  .overlay_model-effect {
+    opacity: 1;
   }
 }
 
@@ -103,9 +140,18 @@
   .section_description {
     width: 100%;
   }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.125rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 24.375rem) {
   .skill_description {
     padding-bottom: 0;
   }
@@ -115,9 +161,25 @@
   .hero_section {
     max-height: 30vh;
   }
-  .button_primary, .button_secondary {
+  .button_primary,
+  .button_secondary {
     width: 6.375rem;
     height: 1.8125rem;
     font-size: 1rem;
+  }
+}
+
+//* target screen larger than 760px
+@media screen and (min-width: 90rem) {
+  html {
+    font-size: 120%;
+  }
+  .hero_section img {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 160rem) {
+  html {
+    font-size: 200%;
   }
 }

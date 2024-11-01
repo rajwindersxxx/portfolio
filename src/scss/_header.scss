@@ -1,7 +1,9 @@
 // *NAVIGATION BAR SETTINGS
 .header {
-  height: 60px;
+  height: 3.75rem;
   background-color: $primary_color;
+  display: flex;
+  align-items: center;
 }
 .nav_bar {
   height: 3.75rem;
@@ -23,36 +25,16 @@
   gap: 1rem;
 }
 .menu_button {
-  background-color: $primary_color;
+  background-color: transparent;
   z-index: 5;
   border: none;
   cursor: pointer;
   display: none;
-}
-.overlay_model {
-  background-color: $secondary_text;
-  display: flex;
-  align-items: center;
-  padding: 36px;
-  justify-content: center;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  width: 100%;
-  font-size: 40px;
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    list-style: none;
-    text-align: center;
-  }
-  a {
-    color: $primary_color;
-    &:hover {
-      color: $accent_color;
-    }
+  svg {
+    transition: all 0.3s;
   }
 }
-
+.menu_overlay svg {
+  fill: $primary_color;
+  transform: rotate(-90deg);
+}
