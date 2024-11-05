@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        img.src = img.dataset.src;
         img.classList.add('loaded'); // Add loaded class for the animation
         observer.unobserve(img); // Stop observing the image once it's loaded
       }
