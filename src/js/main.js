@@ -1,3 +1,6 @@
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 // SELECTORS
 const menuButton = document.querySelector('.menu_button');
 const overlayModel = document.querySelector('.overlay_model');
