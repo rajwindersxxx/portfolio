@@ -1,6 +1,4 @@
-import 'lazysizes';
-// import a plugin
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import apiLink from "./config";
 // SELECTORS
 const menuButton = document.querySelector('.menu_button');
 const overlayModel = document.querySelector('.overlay_model');
@@ -8,10 +6,15 @@ const sectionHeroEl = document.querySelector('.hero_section');
 const navLinks = document.querySelectorAll('.nav_link-model');
 const year = document.querySelector('.year');
 const header = document.querySelector('.header');
+const form = document.querySelector('.feedback_form');
 
+const model_window = document.querySelector('.model_window');
+const model_close = document.querySelector('.model_close');
 const currentYear = new Date().getFullYear();
 year.innerHTML = currentYear;
-
+model_close.addEventListener('click', () => {
+  model_window.classList.add('hidden');
+})
 // EVENT LISTENERS
 menuButton.addEventListener('click', () => {
   overlayModel.classList.toggle('hidden');
@@ -63,3 +66,27 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-60px`,
 });
 headerObserver.observe(sectionHeroEl);
+
+// const form submit
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  try {
+    const response = await fetch(apiLink, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(Object.fromEntries(formData)),
+    });
+    if (!response.ok) {
+      throw new Error('something went wrong');
+    }
+    const data = await response.json();
+    if (data.submit) model_window.classList.remove('hidden');
+  } catch (error) {
+    console.log(error);
+  }
+  form.reset();
+});

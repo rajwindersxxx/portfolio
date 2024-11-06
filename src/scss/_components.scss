@@ -65,6 +65,7 @@
 .hidden{
   opacity: 0 !important;
   transform: translateY(-100%);
+  display: none !important;
 }
 .lazy {
   opacity: 0;
@@ -85,4 +86,28 @@
   left: 0;
   width: 100%;
   z-index: 999;
+}
+.model_window{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 50%;
+  border: 1px solid $secondary_color;
+  background-color: $color-grey-light-1;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.7);
+  translate: all 0.3s;
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: $accent_color;
+    text-align: center;
+  }
 }
