@@ -33,7 +33,7 @@
 .grid {
   display: grid;
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
 }
 .grid_col-3 {
   grid-template-columns: 1fr 1fr 1fr;
@@ -110,4 +110,8 @@
     color: $accent_color;
     text-align: center;
   }
+}
+.icons img{
+  width: 2.875rem;
+  height: 2.875rem;
 }

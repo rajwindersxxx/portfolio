@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
-        img.classList.add('loaded'); // Add loaded class for the animation
-        observer.unobserve(img); // Stop observing the image once it's loaded
+        img.classList.add('loaded'); 
+        observer.unobserve(img);
       }
     });
   };
@@ -67,7 +67,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 headerObserver.observe(sectionHeroEl);
 
-// const form submit
+// feedback form handling
 
 form.addEventListener('submit', async e => {
   e.preventDefault();

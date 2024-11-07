@@ -74,6 +74,9 @@
 }
 // small screen media
 @media screen and (max-width: 31rem) {
+  p.section_description {
+    width: 95%;
+  }
   .nav_list {
     display: none;
   }

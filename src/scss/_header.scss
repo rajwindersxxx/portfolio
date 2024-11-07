@@ -4,6 +4,9 @@
   background-color: $primary_color;
   display: flex;
   align-items: center;
+  a {
+    padding: 0.75rem;
+  }
 }
 .nav_bar {
   height: 3.75rem;

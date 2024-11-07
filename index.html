@@ -10,15 +10,15 @@
   <body>
     <header class="header">
       <nav class="nav_bar">
-        <div class="nav_logo">
+        <div class="nav_logo" onclick="window.location.reload()">
           <h1 class="logo">DevTiven</h1>
         </div>
         <div class="nav_links">
           <ul class="nav_list">
             <li class="nav_link"><a href="#">Home</a></li>
             <li class="nav_link"><a href="#about">About</a></li>
-            <li class="nav_link"><a href="#projects">Projects</a></li>
             <li class="nav_link"><a href="#skills">Skills</a></li>
+            <li class="nav_link"><a href="#projects">Projects</a></li>
             <li class="nav_link"><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -40,8 +40,8 @@
         <ul class="nav_list-model">
           <li class="nav_link-model"><a href="#">Home</a></li>
           <li class="nav_link-model"><a href="#about">About</a></li>
-          <li class="nav_link-model"><a href="#projects">Projects</a></li>
           <li class="nav_link-model"><a href="#skills">Skills</a></li>
+          <li class="nav_link-model"><a href="#projects">Projects</a></li>
           <li class="nav_link-model"><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -50,18 +50,15 @@
       <div class="hero_description">
         <h1>Rajwinder Singh</h1>
         <h3>A web Developer</h3>
-        <button class="button_primary">Learn more</button>
+        <button class="button_primary" onclick="window.location.href='#about'">
+          Learn more
+        </button>
       </div>
       <div class="hero_image">
-        <img
-          class="lazy"
-          src="./src/images/note.webp"
-          alt="Image of a book"
-          class="bookImage"
-        />
+        <img class="" src="./src/images/note.png" alt="Image of a book" />
       </div>
     </section>
-    <section id="about" class="about_section container" id="about">
+    <section id="about" class="about_section container">
       <div class="block">
         <div class="profile_image">
           <img
@@ -248,7 +245,7 @@
       <div class="skill_set">
         <h3>Confident In</h3>
       </div>
-      <div class="best_skills lazy">
+      <div class="best_skills lazy icons">
         <img
           src="./src/icons/html5-plain-wordmark.svg"
           alt="html"
@@ -390,14 +387,14 @@
             </p>
             <div class="Project_links">
               <a
-                href="https://siamongame.tiven.xyz"
+                href="https://ommifoodapp.netlify.app/"
                 target="_blank"
                 rel="noopener"
                 >[View Project]</a
               >
               |
               <a
-                href="https://github.com/rajwindersxxx/Simon-Game-Challenge"
+                href="https://github.com/rajwindersxxx/Simon-Game-Challenge.git"
                 target="_blank"
                 rel="noopener"
                 >[Git Hub]</a
@@ -420,14 +417,14 @@
             </p>
             <div class="Project_links">
               <a
-                href="https://ommifoodapp.netlify.app/"
+                href="https://siamongame.tiven.xyz"
                 target="_blank"
                 rel="noopener"
                 >[View Project]</a
               >
               |
               <a
-                href="https://github.com/rajwindersxxx/Simon-Game-Challenge.git"
+                href="https://github.com/rajwindersxxx/Simon-Game-Challenge"
                 target="_blank"
                 rel="noopener"
                 >[Git Hub]</a

@@ -1,4 +1,4 @@
-const apiLink = 'http://localhost:3000/feedback';
+const apiLink = 'https://api.tiven.xyz/feedback';
  
 
 export default apiLink;
