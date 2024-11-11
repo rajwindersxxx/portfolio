@@ -13,7 +13,7 @@
 .feedback_form {
   grid-column: span 3;
   display: grid;
-  width: 70%;
+  max-width: 56.25rem;
   margin: auto;
   grid-template-columns: auto 1fr;
   position: relative;

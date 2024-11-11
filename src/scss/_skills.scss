@@ -1,4 +1,8 @@
 .skills_section {
+  .skills_container {
+    max-width: 92.5rem;
+    margin: auto;
+  }
   .grid {
     gap: 5.3125rem;
     grid-auto-rows: 1fr;
@@ -6,7 +10,7 @@
   }
   h2 {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
   }
   img {
   width: 100%;
@@ -50,5 +54,8 @@
 }
 .skill_set{
   text-align: center;
-  margin: 1.5rem;
+  margin: 1.5rem; 
+  h3{
+    padding: 1rem;
+  }
 }
