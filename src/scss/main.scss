@@ -1,14 +1,14 @@
-@import 'base';
-@import 'components';
-@import 'header';
-@import 'hero';
-@import 'about';
-@import 'project';
-@import 'skills';
-@import 'contact';
-@import 'feedback';
-@import 'footer';
-@import 'mediaQueries';
+@use 'base' as *;
+@use 'components';
+@use 'header';
+@use 'hero';
+@use 'about';
+@use 'project';
+@use 'skills';
+@use 'contact';
+@use 'feedback';
+@use 'footer';
+@use 'mediaQueries';
 //* DEFAULT
 
 /* - Font sizes (px)
